@@ -1,0 +1,68 @@
+{
+    "receiver": "teams_receiver",
+    "status": "resolved",
+    "alerts": [
+        {
+            "status": "resolved",
+            "labels": {
+                "account": "xxxxxx",
+                "alertname": "InstanceDown",
+                "az": "eu-west-1a",
+                "env": "production",
+                "id": "i-abcdef123456",
+                "instance": "abcdef:9100",
+                "job": "node_exporter",
+                "name": "xxxxxxx",
+                "role": "dns",
+                "severity": "high",
+                "subnet": ",subnet-123456,",
+                "vpc": "vpc-123456"
+            },
+            "annotations": {
+                "description": "abcdef:9100 of job node_exporter has been down for more than 5 minutes.",
+                "summary": "Instance abcdef:9100 down"
+            },
+            "startsAt": "2018-08-29T07:48:27.627625104Z",
+            "endsAt": "2018-09-11T10:13:27.634131017Z",
+            "generatorURL": "https://monitoring.exaple.com/alertmanager/graph?g0.expr=up%7Bjob%3D~%22node_exporter.%2B%22%7D+%3D%3D+0\u0026g0.tab=1"
+        },
+        {
+            "status": "resolved",
+            "labels": {
+                "account": "xxxxxx",
+                "alertname": "InstanceDown",
+                "az": "us-east-1b",
+                "env": "production",
+                "id": "i-abbddbabababa",
+                "instance": "aaaa23123.example.com:9100",
+                "job": "node_exporter",
+                "name": "aaaa23123",
+                "publicdns": "aaaa23123.example.com",
+                "role": "moooo",
+                "severity": "high",
+                "subnet": ",subnet-aaaa23123,",
+                "vpc": "vpc-aaaa23123"
+            },
+            "annotations": {
+                "description": "aaaa23123.example.com:9100 of job node_exporter has been down for more than 5 minutes.",
+                "summary": "Instance aaaa23123.example.com:9100 down"
+            },
+            "startsAt": "2018-09-09T19:04:27.627638741Z",
+            "endsAt": "2018-09-11T10:13:27.634131017Z",
+            "generatorURL": "https://monitoring.exaple.com/alertmanager/graph?g0.expr=up%7Bjob%3D~%22node_exporter.%2B%22%7D+%3D%3D+0\u0026g0.tab=1"
+        }
+    ],
+    "groupLabels": {
+        "alertname": "InstanceDown"
+    },
+    "commonLabels": {
+        "account": "xxxxxx",
+        "alertname": "InstanceDown",
+        "env": "production",
+        "severity": "high"
+    },
+    "commonAnnotations": {},
+    "externalURL": "https://monitoring.exaple.com/alertmanager",
+    "version": "4",
+    "groupKey": "{}/{severity=~\"^(?:.*)$\"}:{alertname=\"InstanceDown\"}"
+}
