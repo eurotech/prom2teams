@@ -10,6 +10,7 @@ COPY . /opt/prom2teams
 
 WORKDIR /opt/prom2teams
 
+RUN make clean
 RUN make package
 
 # Distribution container
